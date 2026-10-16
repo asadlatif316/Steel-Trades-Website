@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Business palette: navy and steel with a brass accent. */
+@theme inline {
+  --color-quench: #071a2e;
+  --color-navy: #0e2a47;
+  --color-navy-soft: #16385c;
+  --color-paper: #f3f5f7;
+  --color-plate: #dde3e9;
+  --color-ink-muted: #526070;
+  --color-brass: #c29a3f;
+  --color-brass-deep: #8f6d1f;
+  --font-display: var(--font-archivo-narrow);
+  --font-sans: var(--font-plex);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper font-sans text-navy;
+}
+
+:focus-visible {
+  outline: 2px solid #c29a3f;
+  outline-offset: 3px;
+}
+
+::selection {
+  background: #c29a3f;
+  color: #071a2e;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
