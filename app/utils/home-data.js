@@ -9,6 +9,8 @@ import {
   Building2,
 } from 'lucide-react';
 import { site } from '@/lib/site';
+export const whyUsImage = null;
+
 
 export const facts = [
   { label: 'Location', value: site.city, icon: MapPin },
@@ -107,5 +109,25 @@ export const faqItems = [
     id: 6,
     q: "Where are you and when are you open?",
     a: `You can find us at ${site.address}. We are open ${site.hours}.`,
+  },
+];
+
+// TODO: confirm these four points with the owner.
+export const whyUs = [
+  {
+    title: "Clear quotes",
+    body: "Every quote lists the material, size, quantity and price, so you know exactly what you are paying for.",
+  },
+  {
+    title: "Honest material advice",
+    body: "We tell you what a material suits before you buy, so it fits the job.",
+  },
+  {
+    title: "Reliable delivery",
+    body: "We confirm timing with you up front, so your work is not left waiting.",
+  },
+  {
+    title: "Local and direct",
+    body: "You deal with the people who handle the steel, right here in Sialkot.",
   },
 ];
