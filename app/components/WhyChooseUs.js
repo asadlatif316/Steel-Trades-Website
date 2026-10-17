@@ -42,7 +42,7 @@ export default function WhyChooseUs() {
           </div>
 
           {/* Right: photo */}
-          <div className='relative aspect-[4/3] overflow-hidden rounded-lg bg-gradient-to-br from-navy to-quench'>
+          <div className='relative aspect-4/3 overflow-hidden rounded-lg bg-gradient-to-br from-navy to-quench'>
             {whyUsImage ? (
               <Image
                 src={whyUsImage}
