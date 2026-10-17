@@ -42,7 +42,7 @@ export default function Header() {
 
       {/* Main bar */}
       <div className='border-b border-plate bg-white'>
-        <div className='mx-auto flex h-18 w-full l items-center justify-between px-6 md:px-8 lg:px-12 gap-6 px-6'>
+        <div className='mx-auto flex h-18 w-full l items-center justify-between px-6 md:px-8 lg:px-12 gap-6'>
           <Link
             href='/'
             className='flex items-center gap-3'

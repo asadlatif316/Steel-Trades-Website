@@ -1,10 +1,17 @@
-import { site } from "@/lib/site";
+import { site } from '@/lib/site';
+import { Hero } from './components';
 
 export default function Home() {
   return (
-    <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16">
-      <h1 className="font-display text-4xl font-bold">{site.name}</h1>
-      <p className="mt-2 text-ink-muted">Home page. Sections will be added one by one.</p>
+    <main className='flex-1'>
+      <Hero
+        title='Dependable steel for builders, workshops and factories.'
+        description='Arsal Steel Traders supplies iron and steel in Sialkot. Send us your list and we reply with a clear quote.'
+        image='/images/hero.jpg'
+        imageAlt='Steel bars and pipes stacked in the yard'
+        primary={{ label: 'Request a Quote', href: '/contact' }}
+        secondary={{ label: 'About Us', href: '/about' }}
+      />
     </main>
   );
 }
