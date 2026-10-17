@@ -1,5 +1,12 @@
 import { site } from '@/lib/site';
-import { FAQ, Hero, QuickFacts, Supply, WhyChooseUs } from './components';
+import {
+  FAQ,
+  Hero,
+  Process,
+  QuickFacts,
+  Supply,
+  WhyChooseUs,
+} from './components';
 
 export default function Home() {
   return (
@@ -16,6 +23,7 @@ export default function Home() {
       <QuickFacts />
       <Supply />
       <WhyChooseUs />
+      <Process />
       <FAQ />
     </main>
   );

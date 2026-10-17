@@ -5,3 +5,4 @@ export { default as QuickFacts } from './quickFacts';
 export { default as Supply } from './Supply';
 export { default as FAQ } from './FAQ';
 export { default as WhyChooseUs } from './WhyChooseUs';
+export { default as Process } from './Process';
