@@ -1,7 +1,7 @@
 import { Archivo_Narrow, IBM_Plex_Sans } from 'next/font/google';
 import './globals.css';
 import { site } from '@/lib/site';
-import Header from './components/SiteHeader';
+import { Header, Footer } from './components';
 
 const archivoNarrow = Archivo_Narrow({
   variable: '--font-archivo-narrow',
@@ -32,6 +32,7 @@ export default function RootLayout({ children }) {
       <body className='flex min-h-full flex-col'>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
