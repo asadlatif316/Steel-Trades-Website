@@ -75,3 +75,37 @@ export const products = [
     icon: Building2,
   },
 ];
+
+// TODO: confirm each answer with the owner before the site goes live.
+export const faqItems = [
+  {
+    id: 1,
+    q: "How do I request a quote?",
+    a: "Send your material list by WhatsApp, phone or email, or use the Contact page. Include the type, size and quantity if you know them, and we will reply with a quote.",
+  },
+  {
+    id: 2,
+    q: "What details should I include?",
+    a: "The type of material, its size or thickness, the grade if you know it, the quantity, and where you need it delivered. If you are missing something, send what you have and we will ask for the rest.",
+  },
+  {
+    id: 3,
+    q: "Can you help me choose the right material?",
+    a: "Yes. Describe the job, such as a gate, a shed frame or a machine part, and we will suggest a suitable material before you order.",
+  },
+  {
+    id: 4,
+    q: "Is there a minimum order?",
+    a: "Order sizes vary by material. Tell us what you need and we will confirm the quantity and price in your quote.",
+  },
+  {
+    id: 5,
+    q: "Do you deliver?",
+    a: "Tell us your delivery location when you request a quote. We will confirm whether delivery or pickup is possible and how long it will take.",
+  },
+  {
+    id: 6,
+    q: "Where are you and when are you open?",
+    a: `You can find us at ${site.address}. We are open ${site.hours}.`,
+  },
+];
