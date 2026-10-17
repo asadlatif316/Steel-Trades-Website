@@ -8,6 +8,7 @@ export default function Hero({
   imageAlt = '',
   primary,
   secondary,
+  eyebrow,
 }) {
   return (
     <section className='relative isolate flex min-h-96 items-center justify-center overflow-hidden bg-quench'>
@@ -26,6 +27,11 @@ export default function Hero({
       <div aria-hidden='true' className='absolute inset-0 -z-10 bg-quench/80' />
 
       <div className='mx-auto w-full max-w-4xl px-6 py-24 text-center text-white'>
+        {eyebrow && (
+          <p className='mb-5 text-sm font-semibold tracking-[0.2em] text-brass uppercase'>
+            {eyebrow}
+          </p>
+        )}
         <h1 className='font-display text-5xl leading-[1.02] font-bold tracking-tight text-balance sm:text-6xl lg:text-7xl'>
           {title}
         </h1>
