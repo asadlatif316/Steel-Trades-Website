@@ -1,5 +1,5 @@
 import { site } from '@/lib/site';
-import { Hero } from './components';
+import { Hero, QuickFacts } from './components';
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         primary={{ label: 'Request a Quote', href: '/contact' }}
         secondary={{ label: 'About Us', href: '/about' }}
       />
+      <QuickFacts />
     </main>
   );
 }
