@@ -19,25 +19,26 @@ export const vision = {
 };
 
 // TODO: confirm these four strengths with the owner.
+// TODO: confirm these four strengths with the owner.
 export const strengths = [
   {
-    title: 'Clear quotes',
-    body: 'Every quote lists the material, size, quantity and price, so there is nothing to decode.',
+    title: "Clear quotes",
+    body: "Every quote lists the material, size, quantity and price in plain words. You can compare it, check it against your job and approve it knowing exactly what you are agreeing to.",
     icon: FileText,
   },
   {
-    title: 'Material know-how',
-    body: 'We help you match the material to the job, so you do not pay for more than you need or buy less than you should.',
+    title: "Material know-how",
+    body: "Steel comes in many types, sizes and thicknesses. We ask about your job and help you match the material to it, so you do not pay for more than you need or buy less than the job demands.",
     icon: Wrench,
   },
   {
-    title: 'Local and close',
-    body: 'We are based in Sialkot, so you can reach us quickly and talk to the people who handle your order.',
+    title: "Local and close",
+    body: "We are based in Sialkot, close to the builders and workshops we serve. You can reach us quickly, ask questions and speak directly with the people who handle your order.",
     icon: MapPin,
   },
   {
-    title: 'Dependable follow-through',
-    body: 'We confirm what we agree, including price, quantity and timing, and keep you informed until your order is done.',
+    title: "Dependable follow-through",
+    body: "We confirm what we agree, including price, quantity and timing, and we keep you informed until your order is complete. If anything changes, you hear it from us first.",
     icon: ShieldCheck,
   },
 ];
