@@ -6,6 +6,7 @@ import {
   QuickFacts,
   Supply,
   WhyChooseUs,
+  CallToAction
 } from './components';
 
 export default function Home() {
@@ -25,6 +26,17 @@ export default function Home() {
       <WhyChooseUs />
       <Process />
       <FAQ />
+      <CallToAction
+        title='Ready to get your steel quote?'
+        description='Send your list on WhatsApp or through the contact page. We reply with a clear quote.'
+        primary={{ label: 'Request a quote', href: '/contact' }}
+        secondary={{
+          label: 'Message on WhatsApp',
+          href: `https://wa.me/${site.whatsappDigits}`,
+          external: true,
+        }}
+        note={`Prefer to talk? Call ${site.phone}`}
+      />
     </main>
   );
 }

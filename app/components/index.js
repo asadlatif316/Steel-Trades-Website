@@ -6,3 +6,4 @@ export { default as Supply } from './Supply';
 export { default as FAQ } from './FAQ';
 export { default as WhyChooseUs } from './WhyChooseUs';
 export { default as Process } from './Process';
+export { default as CallToAction } from './CallToAction';
