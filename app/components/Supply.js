@@ -34,7 +34,7 @@ function ProductCard({ title, description, items, uses, image, icon: Icon }) {
         aria-hidden='true'
       />
 
-      <div className='relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-navy to-quench'>
+      <div className='relative aspect-video overflow-hidden bg-linear-to-br from-navy to-quench'>
         {image ? (
           <Image
             src={image}
