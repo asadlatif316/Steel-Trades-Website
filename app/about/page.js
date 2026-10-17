@@ -1,10 +1,17 @@
-export const metadata = { title: "About Us" };
+import {PageBanner} from '../components';
+
+export const metadata = { title: 'About Us' };
 
 export default function About() {
   return (
-    <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-16">
-      <h1 className="font-display text-4xl font-bold">About Us</h1>
-      <p className="mt-2 text-ink-muted">Sections will be added one by one.</p>
+    <main className='flex-1'>
+      <PageBanner
+        title='About Us'
+        description='From sheets and pipes to bars and structural sections, we supply iron and steel to builders and workshops across Sialkot. You get straight advice on the right material and a clear quote before you commit.'
+        crumbs={[{ label: 'Home', href: '/' }, { label: 'About Us' }]}
+        image='/images/about-banner.jpg'
+        imageAlt='Steel stock at Arsal Steel Traders'
+      />
     </main>
   );
 }
