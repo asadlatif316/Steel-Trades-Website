@@ -1,6 +1,7 @@
 import { FileText, Wrench, MapPin, ShieldCheck } from 'lucide-react';
 
 export const storyImage = null;
+export const visionImage = '/images/vision.jpg';
 
 export const story = {
   title: 'Steel for the people who build and make in Sialkot',

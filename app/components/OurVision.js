@@ -1,13 +1,31 @@
+import Image from 'next/image';
 import Eyebrow from './Eyebrow';
 import Reveal from './Reveal';
-import { vision } from '../utils';
+import { vision, visionImage } from '../utils';
 
 export default function OurVision() {
   return (
     <section
       id='our-vision'
-      className='relative isolate overflow-hidden bg-navy py-24 text-center text-white'
+      className='relative isolate overflow-hidden bg-navy py-28 text-center text-white'
     >
+      {visionImage && (
+        <>
+          <Image
+            src={visionImage}
+            alt=''
+            fill
+            sizes='100vw'
+            className='-z-20 object-cover'
+          />
+          {/* Dark layer over the photo */}
+          <div
+            aria-hidden='true'
+            className='absolute inset-0 -z-10 bg-quench/80'
+          />
+        </>
+      )}
+
       {/* Soft brass glow */}
       <div
         aria-hidden='true'

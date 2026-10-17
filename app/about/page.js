@@ -11,6 +11,8 @@ export default function About() {
           title='About Us'
           description='Arsal Steel Traders is a steel supplier in Sialkot. We help contractors, fabricators and workshops find the right material, send them a clear quote, and deal with them directly from the first message to the final order.'
           crumbs={[{ label: 'Home', href: '/' }, { label: 'About Us' }]}
+          image='/images/about-banner.jpg'
+          imageAlt='Steel stock at Arsal Steel Traders'
         />
         <OurStory />
         <OurVision />
