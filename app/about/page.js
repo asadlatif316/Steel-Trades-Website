@@ -1,4 +1,4 @@
-import {PageBanner} from '../components';
+import {OurStory, PageBanner} from '../components';
 
 export const metadata = { title: 'About Us' };
 
@@ -12,6 +12,7 @@ export default function About() {
         image='/images/about-banner.jpg'
         imageAlt='Steel stock at Arsal Steel Traders'
       />
+      <OurStory/>
     </main>
   );
 }

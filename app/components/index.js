@@ -8,3 +8,4 @@ export { default as WhyChooseUs } from './WhyChooseUs';
 export { default as Process } from './Process';
 export { default as CallToAction } from './CallToAction';
 export { default as PageBanner } from './PageBanner';
+export { default as OurStory } from './OurStory';
