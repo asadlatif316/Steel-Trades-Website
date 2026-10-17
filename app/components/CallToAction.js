@@ -1,6 +1,6 @@
 import Reveal from "./Reveal";
 import { Button } from "./ui";
-
+import Image from "next/image";
 export default function CallToAction({
   title,
   description,
@@ -30,16 +30,6 @@ export default function CallToAction({
               />
             </>
           )}
-
-          {/* Soft glows */}
-          <div
-            aria-hidden='true'
-            className='absolute -top-24 -right-20 -z-10 size-96 rounded-full bg-brass/40 blur-3xl'
-          />
-          <div
-            aria-hidden='true'
-            className='absolute -bottom-32 -left-24 -z-10 size-96 rounded-full bg-navy-soft blur-3xl'
-          />
 
           <div className='mx-auto max-w-2xl'>
             <div

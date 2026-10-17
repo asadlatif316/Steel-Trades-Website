@@ -22,6 +22,8 @@ export default function About() {
         <CallToAction
           title='Ready to get your steel quote?'
           description='Send your list on WhatsApp or through the contact page. We reply with a clear quote.'
+          image='/images/cta.jpg'
+          imageAlt='Steel stock at Arsal Steel Traders'
           primary={{ label: 'Request a quote', href: '/contact' }}
           secondary={{
             label: 'Message on WhatsApp',
