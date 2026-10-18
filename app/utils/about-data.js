@@ -1,6 +1,6 @@
 import { FileText, Wrench, MapPin, ShieldCheck } from 'lucide-react';
 
-export const storyImage = null;
+export const storyImage = '/images/story.jpg';
 export const visionImage = '/images/vision.jpg';
 
 export const story = {
