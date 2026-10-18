@@ -47,10 +47,9 @@ export default function Hero({
           <Link
             href={secondary.href}
             className={buttonVariants({
-              variant: 'outline',
               size: 'lg',
-              className:
-                'border-white/40 bg-transparent text-white hover:bg-white hover:text-quench',
+              variant: 'secondary',
+              className: ' ',
             })}
           >
             {secondary.label}

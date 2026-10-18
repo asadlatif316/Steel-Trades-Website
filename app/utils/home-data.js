@@ -9,8 +9,8 @@ import {
   Building2,
 } from 'lucide-react';
 import { site } from '@/lib/site';
-export const whyUsImage = null;
-export const processImage = null;
+export const whyUsImage = '/images/products/choose.jpg';
+export const processImage = '/images/products/order.jpg';
 
 export const facts = [
   { label: 'Location', value: site.city, icon: MapPin },
@@ -41,7 +41,7 @@ export const products = [
       'Galvanized sheets',
     ],
     uses: 'Fabrication, panels, tanks and machine parts',
-    image: null,
+    image: '/images/products/sheets.jpg',
     icon: Layers,
   },
   {
@@ -55,7 +55,7 @@ export const products = [
       'Galvanized pipes',
     ],
     uses: 'Frames, railings, structures and fluid lines',
-    image: null,
+    image: '/images/products/pipes.jpg',
     icon: Cylinder,
   },
   {
@@ -64,7 +64,7 @@ export const products = [
       'Solid bars in common shapes for general fabrication and building work, cut to the lengths your job needs.',
     items: ['Round bars', 'Square bars', 'Flat bars', 'Reinforcement bars'],
     uses: 'Gates, frames, grills and concrete reinforcement',
-    image: null,
+    image: '/images/products/rods.jpg',
     icon: Ruler,
   },
   {
@@ -73,7 +73,7 @@ export const products = [
       'Shaped steel that carries load. Chosen for sheds, buildings and support frames where strength matters most.',
     items: ['Angles', 'Channels', 'I-beams', 'T-sections'],
     uses: 'Sheds, buildings and support frames',
-    image: null,
+    image: '/images/products/shed.jpg',
     icon: Building2,
   },
 ];
