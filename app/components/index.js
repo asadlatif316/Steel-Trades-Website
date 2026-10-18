@@ -11,3 +11,4 @@ export { default as PageBanner } from './PageBanner';
 export { default as OurStory } from './OurStory';
 export { default as OurVision } from './OurVision';
 export { default as OurStrength } from './OurStrength';
+export { default as ContactSection } from './ContactSection';

@@ -1,4 +1,4 @@
-import {PageBanner} from '../components';
+import { ContactSection, PageBanner } from '../components';
 
 export const metadata = { title: 'Contact Us' };
 
@@ -12,6 +12,7 @@ export default function Contact() {
         image='/images/contact-banner.jpg'
         imageAlt='Steel stock at Arsal Steel Traders'
       />
+      <ContactSection />
     </main>
   );
 }
