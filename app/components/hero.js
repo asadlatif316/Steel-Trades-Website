@@ -40,7 +40,7 @@ export default function Hero({
           {description}
         </p>
 
-        <div className='mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row'>
+        <div className='mt-10 flex items-center justify-center gap-4'>
           <Link href={primary.href} className={buttonVariants({ size: 'lg' })}>
             {primary.label}
           </Link>

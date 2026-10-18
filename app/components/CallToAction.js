@@ -45,7 +45,7 @@ export default function CallToAction({
               {description}
             </p>
 
-            <div className='mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row'>
+            <div className='mt-8 flex items-center justify-center gap-3'>
               <Button>Request a quote</Button>
               <Button  variant='outline' className='text-primary'>About us</Button>
             </div>
