@@ -10,7 +10,7 @@ function ContactCard({ icon: Icon, label, value, href, external }) {
           <Icon className='size-7' aria-hidden='true' />
         </span>
         <p className='mt-4 text-xs text-ink-muted'>{label}</p>
-        <p className='mt-1 text-base font-medium break-words text-navy'>
+        <p className='mt-1 text-base font-medium wrap-break-word text-navy'>
           {value}
         </p>
       </CardContent>
