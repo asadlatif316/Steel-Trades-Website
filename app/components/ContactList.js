@@ -1,48 +1,62 @@
+import { Card, CardContent } from '../components/ui';
 import { contacts } from '../utils';
 
-function Row({ icon: Icon, label, value, href, external }) {
-  const content = (
-    <>
-      <span className='flex size-11 shrink-0 items-center justify-center bg-navy text-brass'>
-        <Icon className='size-5' aria-hidden='true' />
-      </span>
-      <span>
-        <span className='block text-xs text-ink-muted'>{label}</span>
-        <span className='block text-base font-medium text-navy transition-colors group-hover:text-brass-deep'>
-          {value}
+function ContactCard({ icon: Icon, label, value, href, external }) {
+  const card = (
+    <Card className='h-full overflow-hidden pt-0 transition-all duration-300 group-hover:shadow-lg motion-safe:group-hover:-translate-y-1'>
+      <div className='h-1 bg-brass' aria-hidden='true' />
+      <CardContent className='flex flex-col items-center pt-6 text-center'>
+        <span className='flex size-14 items-center justify-center bg-navy text-brass transition-colors duration-300 group-hover:bg-brass group-hover:text-quench'>
+          <Icon className='size-7' aria-hidden='true' />
         </span>
-      </span>
-    </>
+        <p className='mt-4 text-xs text-ink-muted'>{label}</p>
+        <p className='mt-1 text-base font-medium break-words text-navy'>
+          {value}
+        </p>
+      </CardContent>
+    </Card>
   );
 
-  const base = 'group flex items-center gap-4 py-5';
-
-  if (!href) return <div className={base}>{content}</div>;
+  if (!href) return <div className='group h-full'>{card}</div>;
 
   return (
     <a
       href={href}
       {...(external && { target: '_blank', rel: 'noopener noreferrer' })}
-      className={base}
+      className='group block h-full'
     >
-      {content}
+      {card}
     </a>
   );
 }
 
 export default function ContactList() {
+  const cards = contacts.filter((contact) => contact.label !== 'Hours');
+  const hours = contacts.find((contact) => contact.label === 'Hours');
+
   return (
-    <div className='mt-14'>
-      <h3 className='font-display text-2xl font-semibold text-navy'>
+    <div>
+      <h3 className='text-center font-display text-3xl font-semibold text-navy'>
         Or reach us directly
       </h3>
-      <ul className='mt-4 divide-y divide-plate border-y border-plate'>
-        {contacts.map((contact) => (
+
+      <ul className='mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4'>
+        {cards.map((contact) => (
           <li key={contact.label}>
-            <Row {...contact} />
+            <ContactCard {...contact} />
           </li>
         ))}
       </ul>
+
+      {hours && (
+        <p className='mt-8 flex items-center justify-center gap-2 text-center text-sm text-ink-muted'>
+          <hours.icon
+            className='size-4 shrink-0 text-brass-deep'
+            aria-hidden='true'
+          />
+          Open {hours.value}
+        </p>
+      )}
     </div>
   );
 }

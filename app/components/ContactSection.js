@@ -19,7 +19,9 @@ export default function ContactSection() {
             <QuoteForm />
           </CardContent>
         </Card>
+      </Reveal>
 
+      <Reveal className='mx-auto mt-20 w-full max-w-6xl px-6'>
         <ContactList />
       </Reveal>
     </section>
