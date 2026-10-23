@@ -21,6 +21,9 @@ export const metadata = {
     template: `%s | ${site.name}`,
   },
   description: `${site.name} supplies iron and steel in ${site.city}.`,
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
